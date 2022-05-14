@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="simpsonsframed.css">
+
+    <title>Krusty Gets Framed</title>
+</head>
+
+<body>
+    <div class="container">
+        <h2 id="guessResult"></h2>
+        <h3 id="revealAnswer"></h3>
+        <div class="parent">
+            <img class="tvbackground" src="tvbackground.png" alt="" srcset="">
+            <img class="imageShower" id="imageShower" name="episode" />
+        </div>
+        <img id="try1" class="donut"><img id="try2" class="donut"><img id="try3" class="donut">
+        <div class="selectMenus">
+            <select id='level1' class="dropdown">
+                <option value="Select a Season" id="selectSeason">Select a Season</option>
+            </select>
+            <br>
+            <br>
+            <select id='level2' class="dropdown">
+                <option value="Select an Episode" id="selectEpisode">Select an Episode</option>
+            </select>
+        </div>
+        <br>
+        <div class="submitButtons">
+            <button id="submit">Submit</button>
+            <button id="loadFrame">Load New Frame</button>
+            <script src="simpsonsframed.js"></script>
+        </div>
+    </div>
+</body>
+
+</html>
