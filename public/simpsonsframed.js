@@ -134,8 +134,9 @@ function checkGuess() {
     var guessSelect = episodeId.toLowerCase();
     //Changes header text based on whether the guess was correct or not. Also prompts
     //user to make a selection when default text is shown (still need to add default
-    //text to dropdowns). Also adds 1 to the number of tries, Header displays 'D'oh! YOU LOSE' after
-    //6 tries
+    //text to dropdowns). Also adds 1 to the number of tries. Header displays 'D'oh! YOU LOSE' after
+    //3 tries, reveals the answer, and changes the image to Homer screaming. Donut images change to donuts with bites taken out 
+    //after every incorrect guess.
     if (guessSelect === defaultImage) {
         guessResult.innerHTML = 'Excellent!';
     } else if (guessSelect !== defaultImage && seasonNumber + episodeNumber !== 'Select a SeasonSelect an Episode' && tryNumber !== 3) {
