@@ -79,7 +79,8 @@ var myData = [
     ['Season 3', 'Episode 23 - Bart\'s Friend Falls in Love'],
     ['Season 3', 'Episode 24 - Brother, Can you Spare Two Dimes?']
 ]
-
+//Dependant dropdown menus were made using code from a youtube tutorial (https://youtu.be/QFW2o1GA60k). While I understand the concept of this 
+//code, the majority of the next 6 functions are not original code by me. 
 function makeDropDown(data, level1Filter) {
     var filteredArray = data.filter(r => r[0] === level1Filter);
 
@@ -155,7 +156,7 @@ function checkGuess() {
 
 
 }
-//Loads new frame when button is clicked. Resets header to default
+//Loads new/different episode frame when button is clicked. Resets header to default
 function loadNewFrame() {
     defaultImageRandomIndex = Math.floor(Math.random() * defaultImageArray.length);
     defaultImage = defaultImageArray[defaultImageRandomIndex];
